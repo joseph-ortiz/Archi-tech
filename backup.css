@@ -1,0 +1,150 @@
+body{
+	font-family: 'Lato',  'san serif';
+}
+.c > div {
+  padding: 1em;
+}
+
+@media screen and (min-width: 31.42em) {
+  .c2, .c3 , .c4{
+    float: left;
+    width: 25%;
+  }
+
+  .c5, .c6, .c7, .c8{
+  	float:left;
+  	width: 100%;
+  }
+
+}
+
+
+
+
+.landscape {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0;
+	
+	background-color: #EEE;
+}
+
+.clearfix:before,.clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;}
+
+#container {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 70%;
+	margin: auto;
+	background-color: #fefefe;
+	color: #242B30;
+	padding: 55px 1%;
+	position: relative;
+	z-index: 2;
+}
+
+
+
+#navbar {
+	width: 70%; /* Should be same width as content container */
+	position: fixed;
+	top: 0;	left: 15%; /* Left is 100-[content width]/2). */
+	opacity: 1;
+	z-index: 100;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+nav ul {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	list-style-type: none;
+	background-color: #9C413F;
+	background-image: linear-gradient(to bottom, #9C413F 0%, #c4524f 100%);
+	width: 50%;
+	margin: 0;
+	padding: 10px 0;
+	color: #F1F1F1;
+}
+
+nav ul:nth-of-type(1) {float: left;}
+nav ul:nth-of-type(2) {float: right;}
+
+nav ul li {
+	float: left;
+	margin: 0;
+	padding: 8px;
+}
+nav ul:nth-of-type(2) li {float: right;}
+
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav ul li a:hover {text-decoration: underline;}
+
+.fixednav {
+	left: 0 !important;
+	width: 100% !important;
+	opacity: .9 !important;
+	z-index: 1 !important;
+}
+
+.filler {font-size: .8em;}
+
+.fixednav ul {
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	width: 15% !important;
+	text-align: center;
+}
+.fixednav ul li {display: block; float: none;}
+.fixednav ul:nth-of-type(2) li {float: none;}
+
+		
+@media only screen and (max-width: 800px) {
+	body {font-size: 15px;}
+	
+	#container {
+		width: 80%;
+		position: absolute;
+		left: 20%;
+		padding: 1%;
+	}
+
+	#navbar {
+		width: 20%;
+		position: fixed;
+		top: 0; left: 0;
+		opacity: 1;
+		-webkit-transition: none;
+		transition: none;
+	}
+
+	nav ul {width: 100%; padding: 0; background-image: none;}
+	nav ul:nth-of-type(2) {float: left;}
+	nav ul li, nav ul:nth-of-type(2) li {float: none;}
+	
+	nav#navbar ul a {display: block;}
+
+	.fixednav {
+		left: 0 !important;
+		width: 20% !important;
+		opacity: 1 !important;
+	}
+
+	.fixednav ul {
+		-webkit-transition: none;
+		transition: none;
+		width: 100% !important;
+		text-align: left;
+	}
+}
