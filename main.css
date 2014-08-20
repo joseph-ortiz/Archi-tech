@@ -1,26 +1,295 @@
-body{
-	font-family: 'Lato',  'san serif';
-}
-.c > div {
-  padding: 1em;
-}
-
-@media screen and (min-width: 31.42em) {
-  .c2, .c3 , .c4{
-    float: left;
-    width: 25%;
-  }
-
-  .c5, .c6, .c7, .c8{
-  	float:left;
-  	width: 100%;
-  }
-
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+/***************************
+****************************
+General
+****************************
+***************************/
+
+body {
+    font-family: 'Lato', 'san serif';
+    background-image: url(brickwall.png);
+}
+.card {
+    padding-top: 1.5em;
+}
+.c2, .c3, .c4 {
+    padding: 10px 20px 10px 10px;
+    border-top: 1px solid black;
+}
+.c5, .c6, .c7, .c8 {
+    padding-bottom: 1em;
+    text-align: left;
+}
+.footer {
+    padding-top: 3em;
+    text-align: center;
+}
+
+/*General END*/
+
+/***************************
+****************************
+Images
+****************************
+***************************/
 .landscape {
     display: block;
     max-width: 100%;
     height: auto;
-  }
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+h2.image-text {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+}
+h2.image-text span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: 0px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+h3.image-text {
+    position: relative;
+    top: -80px;
+    left: 0;
+    width: 100%;
+}
+h3.image-text.section-image {
+    height: 0;
+}
+h3.image-text span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: 0px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+/*image caption END*/
+
+
+
+/***************************
+****************************
+Navigation 
+****************************
+***************************/
+div.icon {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding-top: 1%;
+    left: 0;
+}
+div.pane {
+    height: auto;
+    width: 100%;
+}
+.p1 {
+    background-color: grey;
+}
+.p2 {
+    background-color: green;
+}
+.pane > button {
+    width: 50%;//33.33%;
+    float: left;
+    left: 0;
+    top: 0;
+    font-family: Lato;
+    color: black;
+    background-color: rgb(255, 118, 118);
+    padding: .75em 1em;
+    margin: 0;
+    border: none;
+    border-right: 1px solid black;
+}
+
+div.menu-content {
+    display: none;//block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+    margin-top: 30px; 
+    z-index: 99  
+}
+button.close {
+    text-align: right;
+    width: 100%;
+    background-color: grey;
+    margin: 0;
+    border: none;
+    padding: 0;
+    padding-right: .6em;
+    font-size: medium;
+}
+.nav-list {
+    text-align: center;
+}
+.nav-list > li.item {
+    padding: 1em;
+}
+li.item > a {
+    text-decoration: none;
+    color: black;
+}
+button.main {
+    background-color: red;
+    border: none;
+    width: 50%;
+    font-family: Lato;
+    display: block;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding: .75em 1em;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    cursor: pointer;
+    transition: .15s;
+}
+/*Navigation End*/
+
+/***************************
+****************************
+Sections
+****************************
+***************************/
+
+h3.title {
+    padding: 1em;
+    font-family: sans-serif;
+    font-size: large;
+    line-height: 0;
+    text-align: center;
+}
+h3.title, p {
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+div.card-container {
+    text-align: center;
+    display: table-cell;
+}
+.salmon {
+    background-color: salmon;
+}
+.light-pink {
+    background-color: rgb(255, 228, 235);
+}
+.light-green {
+    background-color: rgb(229, 240, 187);
+}
+.no-scrollbar {
+    overflow: hidden;
+}
+
+
+/***************************
+****************************
+Contact us section
+****************************
+***************************/
+
+ul.contact {
+    list-style: none;
+}
+ul.contact li {
+    display: inline-block;
+}
+.email {
+    background: url('images/email.png') no-repeat center center;
+}
+.facebook {
+    background: url('images/fb.png') no-repeat center center;
+}
+.twitter {
+    background: url('images/twitter.png') no-repeat center center;
+}
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Contact us  end*/
+
+
+/***************************
+****************************
+MediaQueries section
+****************************
+***************************/
+.c > div {}@media screen and (min-width: 31.42em) {
+    .c2, .c3, .c4 {
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: .5em;
+    }
+    .c5, .c6, .c7, .c8 {
+        float: left;
+        width: 100%;
+    }
+  d
+    h2.image-text {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+}
+h2.image-text span {
+    color: white;
+    font: bold 50px/45px Helvetica, Sans-Serif;
+    letter-spacing: 0px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+button
+.nav-list {
+/* text-align: center; */
+display: inline-block;
+float: right;
+}
+.nav-list > li.item {
+padding: 1em;
+display: inline-block;
+/* float: right; */
+}
+
+button.menu-button{
+    //display: none; 
+}
+div.menu-content{
+    display: none;//testing
+}
+
+}
+
+/*MediaQueries End*/
 
