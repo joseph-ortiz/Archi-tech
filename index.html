@@ -1,109 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Architecture Firm</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="main.css">	
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <meta charset="UTF-8">
+    <title>Architecture Firm</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+
 </head>
+
 <body>
 
-<nav class="menu-container group" id="menu">
-            <div class="pane">
-                <button type="button" class="js-toggle active">Menu</button>
-                <div class="menu-content js-toggleContent js-hide">
-                <button type="button" class="close">×</button>
-                    <ul class="main-nav-list list">
-                        <li class="main-nav-item"><a class="main-nav-link" href="#">Home</a></li>
-                        <li class="main-nav-item"><a class="main-nav-link" href="#">Products</a></li>
-                        <li class="main-nav-item"><a class="main-nav-link" href="#">Pics</a></li>
-                        <li class="main-nav-item"><a class="main-nav-link" href="#">About us</a></li>
-                        <li class="main-nav-item"><a class="main-nav-link" href="#">Contact</a></li>
-                    </ul>
+    <nav class="menu-container" id="menu">
+        <div class="pane p1" id="menuPane">
+            <button id="menuButton" class="b1 menu-button">Menu</button>
+
+            <div class="menu-content">
+                <!--<button type="button" class="close">×</button>-->
+                <ul class="nav-list toggle-content">
+                    <li class="item"><a class="" href="#">Home</a>
+                    </li>
+                    <li class="item"><a class="" href="#">About Us</a>
+                    </li>
+                    <li class="item"><a class="" href="#">Buildings</a>
+                    </li>
+                    <li class="item"><a class="" href="#">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <!--  <div class="icon">Archi-tech</div>-->
+        <div class="pane p2" id="contactPane">
+            <button class="b2 menu-button" id="contactButton">Contact Us</button>
+            <div class="menu-content">
+                 <!--<button type="button" class="close">×</button>-->
+                <ul class="nav-list">
+                    <li class="item"><a class="" href="#">Facebook</a>
+                    </li>
+                    <li class="item"><a class="" href="#">LinkedIN</a>
+                    </li>
+                    <li class="item"><a class="" href="#">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="image">
+    	<img src="narrowStreet.jpg" class="landscape" alt="nyc" />
+    	<h2 class="image-text"><span>Archi-Tech Infrastructure</span></h2>
+    </div>
+    
+    <!-- https://www.flickr.com/photos/30180712@N08/9580312370/in/photolist-2cDZpv-uphpV-8XuaeZ-3ZoWJL-hCuTHL-69J4aB-5qXu28-8W3zW4-xixg-3pLZps-2VwSWd-gmbRpf-fAzB6u-fS1v-gEuMJM-nVAznd-a1d8Yt-f51W2P-7F2YX3-Cdi6E-ntEox-5NHDAc-j1j1Vw-6EvGB-h2LkZn-43n1J-5K1sQP-4TpckD-d516YQ-7FB2F6-6L3ETS-9Lgf4W-nda29Q-M7g1u-8rUN2F-g1p1GR-8vGnwi-72zoDS-mRTa9t-6HuVoX-257ys8-51jzBW-bmH4nU-6YSLyY-7MxkQq-4VfR3v-8ZvDK7-kp4TV-3cfgx-4VjgPU/-->
+    <div class="content container">
+
+
+        <!--Pattern HTML-->
+        <div id="pattern" class="pattern">
+            <div class="c">
+
+                <div class="card-container">
+                    <div class="c2 salmon no-scrollbar">
+                        <i class="fa fa-building fa-4x"></i>
+                        <h3 class="title">Visualize</h3>
+                        <p>House? Office? Treehouse? <br>Here at Archi-tech we will design the perfect building for you.</p>
+                    </div>
+
+                    <div class="c3 light-pink">
+                        <i class="fa fa-cog fa-4x"></i>
+                        <h3 class="title">Enable</h3>
+                        <p>Archi-tech will actively assist you to achieve your goals for the home you always wanted</p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="c4 light-green no-scrollbar">
+                        <i class="fa fa-bullseye fa-4x"></i> 
+                        <h3 class="title">Communicate</h3>
+
+                        <p>We will work with you from the blueprint to the front door of the building once it has been completed.</p>
+
+
+                    </div>
+                </div>
+               <div class="card">
+               	 <div class="image">
+                    <img class="landscape" src="nyc.jpg" alt="new york city">
+                    <h3 class="image-text section-image"><span>Actualize your dream structure</span></h3>
+                </div>
+                <div class="c5 salmon">
+                   
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe explicabo omnis itaque atque dicta dolores commodi velit, incidunt nam. Nemo, saepe quia quidem, placeat suscipit delectus. Non error, exercitationem qui.</p><p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam hic, iste recusandae rerum ex soluta odio. Quod quaerat explicabo nobis, a excepturi dicta voluptatum non beatae ullam? Earum, vel, suscipit?</p>
+
+                </div>
+               </div>
+ <div class="card">
+                <div class="image">
+                    <img class="landscape" src="vanCroppedScaled.jpg" alt="van">
+                    <h3 class="image-text section-image"> <span>Enable you to make an influence</span></h3>
+                </div>
+                <div class="c6 light-pink">
+
+                 
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p><p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
+
+                </div>
+                </div>
+ <div class="card">
+                <div class="image">
+                    <img class="landscape" src="drawingScaled.jpg" alt="working">
+                    <h3 class="image-text section-image"><span>Effectively communicate and aid in the process</span></h3>
+                </div>
+                <div class="c7 light-green">
+                    <div>
+                       <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
+                        <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.
+                        Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p><p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
+                    <p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
+                    </div>
+                </div>
+                </div>
+          
+
+
+
+                <div class="c8 footer">
+                    <ul class="contact">
+			<li><a 
+			href="" 
+			target="_blank"
+			class="icon email"></a></li>
+			<li><a 
+			href="" 
+			target="_blank"
+			class="icon twitter"></a></li>
+			<li><a 
+			href="" 
+			target="_blank"
+			class="icon facebook"></a></li>
+		</ul>
+<h4 class="title">Archi-tech Infrastructure</h4>
+                   
                 </div>
             </div>
-            <div class="pane">
-                <button type="button" class="js-toggle second-toggle">Social</button>
-                <div class="menu-content js-toggleContent js-hide"> 
-                <button type="button" class="close">×</button>
-                    <ul class="main-nav-list list">
-                        <li class="main-nav-item"><a class="main-nav-link social-link" href="#">Facebook</a></li>
-                        <li class="main-nav-item"><a class="main-nav-link social-link" href="#">Twitter</a></li>
-                        <li class="main-nav-item"><a class="main-nav-link social-link" href="#">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        </div>
+    </div>
+    <!--End Pattern HTML-->
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
 
-<div class="content">
-	
-
-	<!--Pattern HTML-->
-  <div id="pattern" class="pattern">
-  	<div class="c">
-  			
-			<div class="main">
-				 <img src="narrowStreet.jpg" class="landscape" alt="nyc" />
-				 <!-- https://www.flickr.com/photos/30180712@N08/9580312370/in/photolist-2cDZpv-uphpV-8XuaeZ-3ZoWJL-hCuTHL-69J4aB-5qXu28-8W3zW4-xixg-3pLZps-2VwSWd-gmbRpf-fAzB6u-fS1v-gEuMJM-nVAznd-a1d8Yt-f51W2P-7F2YX3-Cdi6E-ntEox-5NHDAc-j1j1Vw-6EvGB-h2LkZn-43n1J-5K1sQP-4TpckD-d516YQ-7FB2F6-6L3ETS-9Lgf4W-nda29Q-M7g1u-8rUN2F-g1p1GR-8vGnwi-72zoDS-mRTa9t-6HuVoX-257ys8-51jzBW-bmH4nU-6YSLyY-7MxkQq-4VfR3v-8ZvDK7-kp4TV-3cfgx-4VjgPU/-->
-			</div>
-			<div class="c2">
-				<h3>Column (2nd in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				
-			</div>
-			<div class="c3">
-				<h3>Column (3nd in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				
-			</div>
-			<div class="c4">
-				<h3>Column (4nd in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-			</div>
-			<div class="c5">
-				<h3>Column (5th in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-			</div>
-			<div class="c6">
-				<h3>Column (6th in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-			</div>
-			<div class="c7">
-				<h3>Column (7th in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-			</div>
-			<div class="c8">
-				<h3>Column (8th in source order)</h3>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-				<p>Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque turpis diam, tincidunt nec convallis vitae, dapibus vitae enim. Nam bibendum nisl in risus imperdiet vestibulum.</p>
-			</div>
-		</div>
-	</div>
-	</div>
-	<!--End Pattern HTML-->
-	
-	<script type="text/javascript" src="plugins-libs.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
